@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+}

@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Homepage{
+    color: white;
+    /* background: url("QFNv.gif"); */
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url("QFNv.gif");
+    min-height: 100vh;
+}

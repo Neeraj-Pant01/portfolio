@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.app{
+  height: 100vh;
+  width: 100vw;
+  /* color: rgb(98, 58, 98); */
+  /* color: rgb(61, 22, 61); */
+  /* color: lightblue; */
+  overflow-x: hidden;
+}
+
+.spots{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  color: white;
+  background-color: white;
+  animation: anim 3s linear infinite;
+  /* flex-direction: column-reverse; */
+}
+
+@keyframes anim {
+  0%{
+    background-color: white;
+  }
+  50%{
+    background-color: black;
+  }
+  100%{
+    background-color: white;
+  }
+}
