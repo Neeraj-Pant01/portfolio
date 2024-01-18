@@ -5,7 +5,6 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
 import styled from '@emotion/styled';
 import { useNavigate } from 'react-router-dom';
 
@@ -32,30 +31,45 @@ float:right;
 }
 `
 
-export default function Navbar() {
+export default function Navbar({names}) {
   const navigate = useNavigate();
+
+  const scrollBehaviour = (id) =>{
+    const elem = document.getElementById(`${id}`)
+    elem.scrollIntoView({behavior:"smooth"})
+  }
+
   return (
     <div className="Navbar">
         <Box sx={{ flexGrow: 1,}}>
-      <AppBar position="static" sx={{backgroundColor:"rgb(61, 22, 61, 0.6)", padding:"5px 0px","@media (max-width:450px)":{
+      <AppBar position="static" sx={{backgroundColor:"rgb(61, 22, 61, 0.5)", padding:"12px 0px","@media (max-width:450px)":{
         backgroundColor:"rgba(61, 22, 61, 0.5)"
       },backdropFilter:"blur(10px)"}}>
         <Toolbar sx={{justifyContent:"space-between"}}>
-          <Image src='myimg.jpeg' />
+          <Image src='https://firebasestorage.googleapis.com/v0/b/video-e795c.appspot.com/o/WhatsApp%20Image%202024-01-12%20at%2021.27.35.jpeg?alt=media&token=e719849e-aa60-464b-a543-4d2a8f2edf00' />
           <Container>
+
+        
             <Typography sx={{cursor:"pointer","@media (max-width:450px)":{
               fontSize:"14px"
-            }}}>About</Typography>
+            }}} onClick={()=>scrollBehaviour("intro")}>About</Typography>
+
+          
             <Typography sx={{cursor:"pointer","@media (max-width:450px)":{
               fontSize:"14px"
-            }}}>Contact</Typography>
+            }}} onClick={()=>scrollBehaviour("contact")}>Contact</Typography>
+
+            
             <Typography sx={{cursor:"pointer","@media (max-width:450px)":{
               fontSize:"14px"
-            }}}>Projects</Typography>
+            }}} onClick={()=>scrollBehaviour("projects")}>Projects</Typography>
+
+            
             <Typography sx={{cursor:"pointer","@media (max-width:450px)":{
               fontSize:"14px",
               display:"none"
-            }}}>Skills</Typography>
+            }}} onClick={()=>scrollBehaviour("skills")}>Skills</Typography>
+
             <Button variant='outline' sx={{"@media (max-width:450px)":{
               fontSize:"14px"
             }}} onClick={()=>navigate('/resume')}>Resume</Button>

@@ -120,7 +120,7 @@ const ConnetWithMe = () => {
     }
 
   return (
-    <Wrapper>
+    <Wrapper id='contact'>
         <Typography variant='h5' textAlign={"center"} textTransform={"uppercase"}>Reach Out to Me</Typography>
         <Form ref={form} onSubmit={sendMail}>
             <Input placeholder='enter your name' type='text' name="from_name" autoComplete='off'/>

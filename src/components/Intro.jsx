@@ -53,7 +53,7 @@ width:80%;
 
 const Intro = () => {
   return (
-    <Wrapper>
+    <Wrapper id='intro'>
       <Container>
         <Introcont>
           <Typography sx={{ display: "flex", gap: "8px" }} variant='h4' color={"white"}>KNOW WHO <Typography variant='h4' color={"purple"}> I'm</Typography></Typography>

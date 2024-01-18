@@ -58,8 +58,10 @@ const Project = ({e}) => {
         <Typography textAlign={"center"} sx={{"@media (max-width:500px)":{
           fontSize:"13px",
           margin:"10px 0px 15px 0px",
-        }}}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet enim ipsum at voluptas excepturi dignissimos ullam ut. Doloribus at tenetur laborum mollitia consequatur ab ullam! Tempore facilis non similique beatae dolores officia, adipisci perferendis laborum corrupti optio, expedita nemo repellat.
+        },padding:"0px 10px", fontSize:"15px", color:"lightgrey"}}>
+          {
+            e.desc
+          }
         </Typography>
         <Stack direction="row" spacing={2} marginTop={"15px"}>
         <Button variant='contained' sx={{backgroundColor:"purple",color:"white",":hover":{backgroundColor:"rgb(98, 58, 98)"}}}

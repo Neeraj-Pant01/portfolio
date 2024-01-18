@@ -38,7 +38,7 @@ flex-direction:column;
 
 const Skills = () => {
   return (
-    <Conatiner>
+    <Conatiner id='skills'>
         <Typography variant='h4' marginTop={"2px"}>
         Proficiencies <span style={{color:"purple"}}>In</span>
         </Typography>

@@ -27,11 +27,16 @@ justify-content:center;
 // border:2px solid yellow;
 flex-wrap:wrap;
 gap:50px;
+row-gap:100px;
+
+@media screen and (max-width:500px){
+  row-gap:50px;
+}
 `
 
 const projects = () => {
   return (
-    <Container>
+    <Container id='projects'>
         <Typography variant='h4' >PROJECT GALLERY</Typography>
         <Typography fontSize={"18px"} color={"rgb(98, 58, 98)"} width={"800px"} textAlign={"center"} sx={{"@media (max-width:500px)":{
           fontSize:"14px",
@@ -40,7 +45,7 @@ const projects = () => {
         }}}>"Step into my project gallery, where I showcase powerful demonstrations. These are just a glimpse – there's so much more to explore."</Typography>
         <ProjectsWrapper>
             {
-                AllProjects.map((e,i)=><Project e={e}/>)
+                AllProjects.map((e,i)=><Project e={e} key={e.name}/>)
             }
         </ProjectsWrapper>
     </Container>

@@ -27,7 +27,10 @@ const Wrapper = styled.div`
   // flex-wrap:wrap;
   align-items:center;
 
-  @media screen and (max-width: 440px) {
+  @media screen and (max-width: 480px) {
+    flex-direction: column-reverse;
+  }
+  @media screen and (max-width: 882px) {
     flex-direction: column-reverse;
   }
 `;
@@ -48,6 +51,7 @@ const AboutMe = styled.div`
   flex: 1.5;
   // border: 2px solid green;
   height:200px;
+  // text-align:center;
 
   @media screen and (max-width:500px){
     // height:900px;
@@ -58,12 +62,14 @@ const AboutMe = styled.div`
 const ImgCont = styled.div`
   flex: 1;
   display:flex;
-  align-items:center;
-  justify-content:center;
+  // align-items:center;
+  // justify-content:center;
   // border: 2px solid yellow;
 
 @media screen and (max-width:500px){
   margin-bottom:50px;
+  align-items:center;
+  justify-content:center;
 }
 `;
 
@@ -153,7 +159,7 @@ const Me = () => {
 
 
   return (
-    <Container>
+    <Container id='me'>
       <Wrapper>
         <AboutMe>
           <Typography variant='h4'>HI THERE ,
@@ -171,10 +177,11 @@ const Me = () => {
         <ImgCont>
         <ImgContainer>
         <Layer />
-          <Img src='myimg.jpeg' alt='' />
+          <Img src='https://firebasestorage.googleapis.com/v0/b/video-e795c.appspot.com/o/WhatsApp%20Image%202024-01-12%20at%2021.27.35.jpeg?alt=media&token=e719849e-aa60-464b-a543-4d2a8f2edf00' alt='profile.img' />
         </ImgContainer>
         </ImgCont>
       </Wrapper>
+      {/* <Typography variant='h5'>"Welcome to my tech universe, where ideas transform into digital reality."</Typography> */}
       <TypeWritterText marginTop={"50px"}>WELCOME TO MY WORLD...</TypeWritterText>
     </Container>
   );
