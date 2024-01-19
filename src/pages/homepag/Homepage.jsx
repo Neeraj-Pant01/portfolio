@@ -8,10 +8,6 @@ import Projects from "../../components/projects"
 import ConnetWithMe from '../../components/ConnetWithMe'
 
 const Homepage = () => {
-  const handleId = () =>{
-    const el = document.getElementById("f");
-    alert(el)
-  }
   return (
     <div className='Homepage'>
       <Navbar/>

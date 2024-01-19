@@ -5,7 +5,6 @@ import { Route, Routes } from 'react-router-dom';
 import Resume from './pages/Resume';
 
 const App = () => {
-  // const spanNumber = 20;
   return (
     <div className='app'>
       <Routes>

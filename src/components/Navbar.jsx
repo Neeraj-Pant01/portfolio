@@ -42,8 +42,9 @@ export default function Navbar({names}) {
   return (
     <div className="Navbar">
         <Box sx={{ flexGrow: 1,}}>
-      <AppBar position="static" sx={{backgroundColor:"rgb(61, 22, 61, 0.5)", padding:"12px 0px","@media (max-width:450px)":{
-        backgroundColor:"rgba(61, 22, 61, 0.5)"
+      <AppBar position="static" sx={{backgroundColor:"rgb(61, 22, 61, 0.5)", padding:"19px 0px","@media (max-width:450px)":{
+        backgroundColor:"rgba(61, 22, 61, 0.5)",
+        padding:"12px 0px"
       },backdropFilter:"blur(10px)"}}>
         <Toolbar sx={{justifyContent:"space-between"}}>
           <Image src='https://firebasestorage.googleapis.com/v0/b/video-e795c.appspot.com/o/WhatsApp%20Image%202024-01-12%20at%2021.27.35.jpeg?alt=media&token=e719849e-aa60-464b-a543-4d2a8f2edf00' />

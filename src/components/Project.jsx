@@ -44,7 +44,9 @@ justify-content:center;
 margin-bottom:20px;
 `
 const Image = styled.img`
+margin-top:20px;
 width:80%;
+border-radius:10px;
 `
 
 const Project = ({e}) => {
@@ -52,7 +54,7 @@ const Project = ({e}) => {
   return (
     <ProjectContainer>
         <ProjectImage>
-            <Image src='avatar.png'/>
+            <Image src={e.image}/>
         </ProjectImage>
         <Typography variant='h6' textAlign={"center"} color={"purple"}>{e.name}</Typography>
         <Typography textAlign={"center"} sx={{"@media (max-width:500px)":{
